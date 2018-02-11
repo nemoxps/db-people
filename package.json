@@ -1,0 +1,26 @@
+{
+    "name": "db-people",
+    "version": "0.1.0",
+    "description": "",
+    "keywords": [],
+    "author": "Pascal Hüttermann (https://github.com/nemoxps)",
+    "license": "MIT",
+    "main": "src/index.js",
+    "dependencies": {
+        "db-base": "nemoxps/db-base#semver:^0.1.0",
+        "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+        "eslint": "^4.15.0",
+        "eslint-config-nemoxps": "nemoxps/eslint-config-nemoxps#semver:^0.5.0",
+        "tape": "^4.8.0",
+        "tap-spec": "^4.1.1"
+    },
+    "scripts": {
+        "test:lint": "eslint ./",
+        "test:tape": "tape test/*.test.js | tap-spec",
+        "test": "npm run --silent test:tape && npm run --silent test:lint"
+    },
+    "repository": "nemoxps/db-people",
+    "bugs": "https://github.com/nemoxps/db-people/issues"
+}
